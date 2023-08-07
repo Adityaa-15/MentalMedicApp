@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="static\home.css">
+</head>
+<body>
+    <div class="context">
+        <h1></h1>
+    </div>
+
+    <div class="header">
+        <nav>
+            <img src="static/logo.png" class="logo" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="{{ url_for('aboutUs') }}">About Us</a></li>
+                <li><a href="{{ url_for('team') }}">TEAM</a></li>
+                <li><a href="{{ url_for('contactUs') }}">Contact Us</a></li>
+            </ul>
+            <img src="static\menu.png" class="menu-icon">
+        </nav>
+    </div>
+
+    <div class="container">
+      
+      <div class="block prediction">
+          <img src="static/predictpng.png" alt="Prediction" class = "img1">
+          <h2>Prediction</h2>
+          <a href="{{ url_for('sentiments_pred') }}"><button >Let us Help</button></a>
+        </div>
+      
+        <div class="block audit">
+          <img src="static/auditpng.png" alt="Audit" class = "img2">
+          <h2>Audit</h2>
+          <a href="{{ url_for('audit') }}"><button >Audit</button></a>
+        </div>
+        <div class="block chatbot">
+          <img src="static/chatbotpng.png" alt="Chatbot" class = "img3">
+          <h2>Chatbot</h2>
+          <a href="{{ url_for('home') }}"><button >Chat with AI</button></a>
+        </div>
+      </div>
+
+      
+      
+</body>
+</html>

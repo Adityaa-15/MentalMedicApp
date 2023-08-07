@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mental Medic</title>
+    <link rel="stylesheet" href="static/start.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="static/bg_video.mp4" type="video/mp4">
+      </video>
+    
+    <div class="header">
+        <nav>
+            <img src="logo.png" class="logo">
+        </nav>
+
+        <div class="text-box1">
+            <h1>This is <span class="auto-input"></span></h1> 
+        </div>
+        <div class="text-box2">
+            <p class="para1">Your one destination to check your mental health condition by our advanced features like <strong>Chatbot, analysis through social media or by a quiz</strong></p>
+        </div>
+
+
+        
+        <a href="{{ url_for('login') }}" class="btn">LOGIN</a>
+        
+
+
+        <img src="" alt="" class="user-img">
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Mental Medic", "Online Psychiatrist","Mental Health analyzer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            
+            loop: true
+        })
+    </script>
+</body>
+</html>
